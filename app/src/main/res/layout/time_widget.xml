@@ -6,68 +6,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    android:rowCount="5"
-    android:columnCount="4"
+    android:rowCount="6"
+    android:columnCount="12"
     android:theme="@style/Theme.MyTimeWidget.AppWidgetContainer">
 
-<!--    <TextView-->
-<!--        android:id="@+id/appwidget_text"-->
-<!--        style="@style/Widget.MyTimeWidget.AppWidget.InnerView"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_centerVertical="true"-->
-<!--        android:layout_margin="8dp"-->
-<!--        android:contentDescription="@string/appwidget_text"-->
-<!--        android:text="@string/appwidget_text"-->
-<!--        android:textSize="24sp"-->
-<!--        android:textStyle="bold|italic" />-->
-    <!-- Row 1: India time, spanning all 4 columns -->
+
     <TextView
         android:id="@+id/day_india"
-        android:layout_width="196dp"
+        android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
         android:layout_column="0"
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="8"
         android:text="Saturday"
         android:textColor="@color/teal_200"
-        android:textSize="32sp"
+        android:textSize="28sp"
         android:gravity="left|bottom"
         android:paddingLeft="10dp"
-        android:layout_marginBottom="2dp"
         android:layout_marginTop="6dp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/date_india"
-        android:layout_width="196dp"
+        android:layout_width="226dp"
         android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="0"
-        android:layout_columnSpan="2"
-        android:text="22 DEC"
+        android:layout_columnSpan="8"
+        android:text="22 November"
         android:textColor="@color/teal_200"
-        android:textSize="32sp"
-        android:gravity="left|bottom"
-        android:paddingLeft="10dp"
+        android:textSize="28sp"
+        android:gravity="left|top"
+        android:paddingLeft="8dp"
         android:layout_marginBottom="10dp"
-
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/time_india"
-        android:layout_width="194dp"
+        android:layout_width="166dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
         android:layout_rowSpan="2"
-        android:layout_column="2"
-        android:layout_columnSpan="2"
+        android:layout_column="8"
+        android:layout_columnSpan="4"
         android:text="00:00"
         android:textColor="?android:attr/textColorPrimary"
-        android:textSize="60sp"
+        android:textSize="56sp"
         android:gravity="right|bottom"
-        android:paddingRight="10dp"
+        android:layout_marginRight="0px"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="12dp"
         android:textStyle="bold" />
@@ -78,7 +64,7 @@
         android:layout_height="1dp"
         android:layout_row="2"
         android:layout_column="0"
-        android:layout_columnSpan="4"
+        android:layout_columnSpan="12"
         android:background="?android:attr/textColorPrimary"
        />
 
@@ -88,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_row="3"
         android:layout_column="0"
-        android:layout_columnSpan="1"
+        android:layout_columnSpan="3"
         android:text="SNG"
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="22sp"
@@ -101,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_row="4"
         android:layout_column="0"
-        android:layout_columnSpan="1"
+        android:layout_columnSpan="3"
         android:text="00:00"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="22sp"
@@ -114,8 +100,8 @@
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_row="3"
-        android:layout_column="1"
-        android:layout_columnSpan="1"
+        android:layout_column="3"
+        android:layout_columnSpan="3"
         android:text="LDN"
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="22sp"
@@ -127,8 +113,8 @@
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_row="4"
-        android:layout_column="1"
-        android:layout_columnSpan="1"
+        android:layout_column="3"
+        android:layout_columnSpan="3"
         android:text="00:00"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="22sp"
@@ -141,8 +127,8 @@
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_row="3"
-        android:layout_column="2"
-        android:layout_columnSpan="1"
+        android:layout_column="6"
+        android:layout_columnSpan="3"
         android:text="ZUR"
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="22sp"
@@ -154,8 +140,8 @@
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_row="4"
-        android:layout_column="2"
-        android:layout_columnSpan="1"
+        android:layout_column="6"
+        android:layout_columnSpan="3"
         android:text="00:00"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="22sp"
@@ -169,8 +155,8 @@
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_row="3"
-        android:layout_column="3"
-        android:layout_columnSpan="1"
+        android:layout_column="9"
+        android:layout_columnSpan="3"
         android:text="CST"
         android:textColor="?android:attr/textColorSecondary"
         android:textSize="22sp"
@@ -182,13 +168,26 @@
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_row="4"
-        android:layout_column="3"
-        android:layout_columnSpan="1"
+        android:layout_column="9"
+        android:layout_columnSpan="3"
         android:text="00:00"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="22sp"
         android:gravity="center"
         android:padding="4dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_developer"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="8"
+        android:layout_columnSpan="4"
+        android:text="Developed by: Deepak Verma"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="8sp"
+        android:gravity="center"
         android:textStyle="bold" />
 
 
